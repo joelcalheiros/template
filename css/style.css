@@ -1,0 +1,292 @@
+﻿* {margin:0; padding: 0;}
+html, body {height:100%; font-family: 'Maven Pro', sans-serif; font-size: 10pt;}
+
+body{
+    background: #000;	
+}     
+
+
+
+
+#xpto {
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    width: 250px;
+    height: 120px;
+    background: red;
+}     
+
+
+#header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: 999;
+}  
+
+#logo {
+    float: left;
+    height: 65px;
+    width: 275px;
+    background: url(../images/logo_load.png);
+    margin-left: 15px;
+    margin-top: 15px;
+}  
+#social {
+    float: right;
+    margin-top: 20px;
+    margin-right: 15px;   	
+}  
+.lang, .fb {
+    float: right;
+    color: #FFF;
+}
+.lang{
+    margin-right: 25px;
+    margin-top: 10px
+}
+article.home-presentation{
+    margin: 0 auto;
+    height: 100%;
+    width: 700px;
+    height: 400px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+} 
+
+.home-presentation h1{
+    text-align: right;
+}
+
+.bullet {width: 16px; height: 16px; border-radius: 8px;background: #FFF; cursor: pointer; margin: 5px 0; float: left; border: 1px solid #000}
+.bullet:hover {width: 16px; height: 16px; border-radius: 8px;background: #4e4e4e; cursor: pointer; margin: 5px 0}
+
+
+.firstH {
+    width: 12px; 
+    height: 12px; 
+    background: url(../images/first-bg.png); 
+    cursor: pointer; 
+    margin: 5px; 
+    display: inline-block;
+}
+.bulletH {
+    width: 12px; 
+    height: 12px; 
+    border-radius: 100%;
+    background: green;
+    cursor: pointer; 
+    margin: 5px; 
+    display: inline-block;
+}
+.bulletH:hover {
+    width: 12px; 
+    height: 12px;
+    border-radius: 100%;
+    background: red; 
+    cursor: pointer; 
+    margin: 5px
+}
+.selectedH{
+    border-radius: 100%;
+    background: red;
+}
+
+
+
+
+#logo1{
+    font-weight: 900;
+    font-size: 32px;
+    padding: 10px;
+    float: left;
+}
+
+h1 {
+    margin: -110px auto;
+    text-align: center;
+    text-shadow: -1px -1px 0px rgba(255,255,255,0.3), 1px 1px 0px rgba(0,0,0,0.8);
+    color: #333;
+    opacity: 0.4;
+    font: 700 80px 'Bitter';
+}
+/** formata elementos que tem backgrounds parallax **/
+.bgParallax {
+    font-family: 'Maven Pro', sans-serif;
+    color:#FFF;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1920px;
+    position: relative;
+    min-height: 100%;
+    background-position: 50% 0;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+
+/* Define backgrounds dos divs */
+#homepage {
+    position: relative;
+    background: #000 url(../images/874230.jpg) 50% 50% no-repeat;
+    background-attachment:fixed;
+    /*   background-size: 100%;
+       -webkit-box-sizing: border-box;  Safari/Chrome, other WebKit 
+       -moz-box-sizing: border-box;     Firefox, other Gecko 
+       box-sizing: border-box;          Opera/IE 8+ */
+    overflow: hidden;
+}
+#homepage:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-attachment:fixed;
+    background-image: url(../images/grid2.png);
+}
+#missao {
+    background: #000;
+
+    background-repeat: no-repeat; 
+}
+#visao {background-image: url(../images/img3.jpg);}
+
+#yyy {background-image: url(../images/img5.jpg);}
+
+/** Formata o article que vai o texto 
+.bgParallax article {
+width: 70%;
+text-align: center;
+margin:0 auto;
+padding:20% 0 0;
+}
+*/
+/** formata texto **/
+article h1 {font-size:40px;}
+article p {line-height: 30px; font-size:20px; margin-top:15px;}
+article p a {color:#FFF; text-decoration:none; font-size:30px;}
+
+#applicationssID{background: purple; overflow: hidden;}
+
+#groupID {
+    overflow: hidden;
+}
+#groupID .divPannel{
+    background: #000;
+    background-attachment:fixed;
+    background-size: cover;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.contentDivSlide {
+    height: 100%;
+    float: left;
+    position: relative;
+    background-attachment:fixed;
+    background-size: cover;
+}
+.contentDivSlide:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-attachment:fixed;
+    background-image: url(../images/grid2.png);
+}
+.DivMenu {position: absolute; bottom: 50px; left: 0; right: 0; text-align: center; height: 25px;}
+.DivMenu>div{text-align: center}
+
+#activitiesID {background: #4e4e4e; overflow: hidden;}
+
+.activitiesDiv {height: 100%; float: left; position: relative}
+
+#applicationsID {background: #FFF; overflow: hidden;}
+.applicationsDiv {height: 100%; float: left; position: relative}
+
+.divPannel{width: 99999px; position: absolute;}
+
+#menu {position: fixed; left: 0; top: 0; width: 35px; height: 100%; display: table; z-index: 9}
+.menu-center {display: table-cell; vertical-align: middle; padding-left: 10px}
+
+.bg {
+    background: url(../images/IMG_8651.jpg) no-repeat;
+    background-size: 100%;
+    margin-left: 150px;
+    padding: 0;
+    position: relative;
+    float: left;
+    width: 20%;
+    z-index: 2;
+    margin-right: 50px;
+}		 
+.bg3 {
+    background: url(../images/esposende2.jpg) no-repeat;
+    background-size:100%;
+    float:left;
+    padding: 0;
+    position: relative;
+    width: 20%;
+    z-index: 2;
+    top: -20px;
+    margin-right: 50px;
+}		 
+.bg2 {
+    background: url(../images/esposende.jpg) no-repeat;
+    background-size:100%;
+    padding: 0;
+    position: relative;
+    float:left;
+    top: 0px;
+    width: 20%;
+    z-index: 0;
+    top: 70px;
+}	
+.bg4 {
+    background: url(../images/trainers2.png) 50% 150px no-repeat fixed;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 20%;
+    z-index: 2;
+}	
+.left-slide{
+    cursor: pointer;
+    text-align: center;
+    background: url(../images/left.png) 50% 50% no-repeat;
+    width: 100px;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+    bottom:10px;
+}
+.right-slide {
+    cursor: pointer;
+    text-align: center;
+    background: url(../images/right.png) 50% 50% no-repeat;
+    width: 100px;
+    position: absolute; 
+    right: 50px; 
+    top: 10px;
+    bottom:10px;
+}
+
+.selected{background: red}
+
+#missao article {
+    z-index: 99999;
+    position: absolute;
+    margin-left: 161px;
+    width: 900px;
+}
